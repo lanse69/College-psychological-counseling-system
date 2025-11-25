@@ -36,7 +36,7 @@ git clone --recursive https://github.com/lanse69/College-psychological-counselin
 
 git submodule update --init --recursive
 ### 2. 数据库环境准备
-请确保本地安装了 MySQL 8.0+
+请确保服务端安装了 MySQL 8.0+
 ### 3. 编译与运行
 请分别进入 PsyServer 和 PsyClient 目录,进行编译。
 
