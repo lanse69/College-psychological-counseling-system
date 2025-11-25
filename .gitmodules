@@ -1,0 +1,6 @@
+[submodule "PsyServer"]
+	path = PsyServer
+	url = git@github.com:lanse69/College-psychological-counseling-system-Server.git
+[submodule "PsyClient"]
+	path = PsyClient
+	url = git@github.com:lanse69/College-psychological-counseling-system-Client.git
