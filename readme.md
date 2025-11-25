@@ -20,10 +20,12 @@
 ## 📂 项目结构
 本仓库作为聚合仓库，管理客户端和服务端的版本。
 
-```text
 College-psychological-counseling-system/
+
 ├── PsyClient/      # [子模块] 客户端源码
+
 ├── PsyServer/      # [子模块] 服务端源码
+
 └── README.md
 
 ## 🚀 快速开始
@@ -31,14 +33,18 @@ College-psychological-counseling-system/
 git clone --recursive https://github.com/lanse69/College-psychological-counseling-system.git
 
 如果您已经使用普通方式克隆了代码，请手动初始化子模块：
+
 git submodule update --init --recursive
 ### 2. 数据库环境准备
 请确保本地安装了 MySQL 8.0+
 ### 3. 编译与运行
 请分别进入 PsyServer 和 PsyClient 目录,进行编译。
+
 启动顺序: 请先启动服务端 (PsyServer)，再启动客户端 (PsyClient)。
 
 ## 🤝 交互协议
 客户端与服务端通过 TCP + JSON 进行通信，不共享任何代码。
+
 客户端: 负责 UI 展示、输入校验、JSON 序列化/反序列化。
+
 服务端: 负责 Socket 监听、业务逻辑校验、数据库读写、消息推送。
