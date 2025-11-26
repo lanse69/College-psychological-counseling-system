@@ -14,29 +14,29 @@
 - **构建工具**: CMake 3.16+
 - **UI 框架**: Qt 6 (QML / Qt Quick)
 - **网络通信**: TCP Socket (Qt Network), JSON 协议
-- **数据库**: PostGreSQL
+- **数据库**: PostGreSQL 12+
 - **平台支持**: Linux
 
 ## 📂 项目结构
 本仓库作为聚合仓库，管理客户端和服务端的版本。
-
+```text
 College-psychological-counseling-system/
-
 ├── PsyClient/      # [子模块] 客户端源码
-
 ├── PsyServer/      # [子模块] 服务端源码
-
 └── README.md
+```
 
 ## 🚀 快速开始
 ### 1. 克隆项目
+```bash
 git clone --recursive https://github.com/lanse69/College-psychological-counseling-system.git
-
+```
 如果您已经使用普通方式克隆了代码，请手动初始化子模块：
-
+```bash
 git submodule update --init --recursive
+``
 ### 2. 数据库环境准备
-请确保服务端安装了 PostGreSQL
+请确保服务端安装了 PostGreSQL .详看服务端readme文件
 ### 3. 编译与运行
 请分别进入 PsyServer 和 PsyClient 目录,进行编译。
 
