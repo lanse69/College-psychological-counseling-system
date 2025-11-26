@@ -6,7 +6,7 @@
 ## 🏗 系统架构
 系统分为两部分，通过 **TCP/JSON** 协议进行通信，物理上完全解耦：
 
-*   **服务端 (PsyServer):** 负责数据库连接 (MySQL)、业务逻辑处理 (鉴权、预约冲突检测、报表统计) 以及高并发 TCP 连接管理。
+*   **服务端 (PsyServer):** 负责数据库连接 (PostGreSQL)、业务逻辑处理 (鉴权、预约冲突检测、报表统计) 以及高并发 TCP 连接管理。
 *   **客户端 (PsyClient):** 基于 **Qt Quick (QML)** 开发的跨平台用户界面，提供学生、心理医生、管理员三种角色的操作视图。
 
 ## 🏗 技术栈
@@ -14,7 +14,7 @@
 - **构建工具**: CMake 3.16+
 - **UI 框架**: Qt 6 (QML / Qt Quick)
 - **网络通信**: TCP Socket (Qt Network), JSON 协议
-- **数据库**: MySQL 8.0+
+- **数据库**: PostGreSQL
 - **平台支持**: Linux
 
 ## 📂 项目结构
@@ -36,7 +36,7 @@ git clone --recursive https://github.com/lanse69/College-psychological-counselin
 
 git submodule update --init --recursive
 ### 2. 数据库环境准备
-请确保服务端安装了 MySQL 8.0+
+请确保服务端安装了 PostGreSQL
 ### 3. 编译与运行
 请分别进入 PsyServer 和 PsyClient 目录,进行编译。
 
