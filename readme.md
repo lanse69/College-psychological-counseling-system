@@ -34,7 +34,7 @@ git clone --recursive https://github.com/lanse69/College-psychological-counselin
 如果您已经使用普通方式克隆了代码，请手动初始化子模块：
 ```bash
 git submodule update --init --recursive
-``
+```
 ### 2. 数据库环境准备
 请确保服务端安装了 PostGreSQL .详看服务端readme文件
 ### 3. 编译与运行
